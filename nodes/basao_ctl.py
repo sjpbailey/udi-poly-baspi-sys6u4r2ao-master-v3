@@ -89,7 +89,7 @@ class Controller(udi_interface.Node):
 
                 return r.content
             else:
-                LOGGER.error("BASpi6u6r.get_request:  " + r.content)
+                LOGGER.error("BASpi6u4r2ao.get_request:  " + r.content)
                 return None
 
         except requests.exceptions.RequestException as e:
@@ -104,8 +104,8 @@ class Controller(udi_interface.Node):
 
         LOGGER.info('Creating {} Pool Nodes'.format(how_many))
         for i in range(0, how_many):
-            address = 'zone_{}'.format(i)
-            title = 'Pool {}'.format(i)            
+            address = 'baspiao1_id_{}'.format(i)
+            title = 'Device {}'.format(i)            
             ip = self.Parameters.basaoip_0
             LOGGER.info(ip)
             ip1 = self.Parameters.basaoip_1  

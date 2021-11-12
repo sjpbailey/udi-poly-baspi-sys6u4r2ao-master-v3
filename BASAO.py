@@ -7,7 +7,7 @@ MIT License
 import udi_interface
 import sys
 
-from nodes import pool_ctl
+from nodes import basao_ctl
 
 LOGGER = udi_interface.LOGGER
 
@@ -17,7 +17,7 @@ if __name__ == "__main__":
         polyglot.start()
 
         # Create the controller node
-        pool_ctl.Controller(polyglot, 'controller',
+        basao_ctl.Controller(polyglot, 'controller',
                             'controller', 'BAS 6u4r2ao')
 
         # Just sit and wait for events
