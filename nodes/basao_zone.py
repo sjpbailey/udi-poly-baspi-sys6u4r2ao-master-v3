@@ -22,17 +22,17 @@ class basaoNode(udi_interface.Node):
         self.bc = bc
         LOGGER.info(address)
         ### IP Address Sorter
-        if address == 'zone_{}'.format(0):
+        if address == 'baspiao1_id_{}'.format(0):
             self.ipaddress = ip
-        elif address == 'zone_{}'.format(1):
+        elif address == 'baspiao1_id_{}'.format(1):
             self.ipaddress = ip1
-        elif address == 'zone_{}'.format(2):
+        elif address == 'baspiao1_id_{}'.format(2):
             self.ipaddress = ip2
-        elif address == 'zone_{}'.format(3):
+        elif address == 'baspiao1_id_{}'.format(3):
             self.ipaddress = ip3
-        elif address == 'zone_{}'.format(4):
+        elif address == 'baspiao1_id_{}'.format(4):
             self.ipaddress = ip4
-        elif address == 'zone_{}'.format(5):
+        elif address == 'baspiao1_id_{}'.format(5):
             self.ipaddress = ip5            
         else:
             pass    
