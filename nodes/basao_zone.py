@@ -131,7 +131,7 @@ class basaoNode(udi_interface.Node):
             'DON4' : {'output':'GV10', 'index': (4)}, #,'control': 'GV16'
             } 
         index = self.mapping[command['cmd']]['index']
-        control = self.mapping[command['cmd']]['control']
+        control = self.mapping[command['cmd']]['output']
         self.ctrl = int(command.get('value',))
         self.setDriver(control, self.ctrl)
         if self.ctrl == 1:
