@@ -6,7 +6,7 @@
 
 * The controller uses pull down commands for the outputs. Here is a program example within the ISY, there is no need for an Else statement on and off happen for the duration time in Then:
 
-![Irrigation ISY Program](https://github.com/sjpbailey/UDI-BASpi-SYS6U4R2AO-master/blob/master/Images/shot_2.png)
+![Irrigation ISY Program](https://github.com/sjpbailey/udi-poly-baspi-sys6u4r2ao-master-v3/blob/b1b68c9918e52511beba6ff9f41cdc153e33f9e1/Images/shot_2.png)
 
 * It would be great if the Else statement also included an additional If statement. 
 This is also a very diverse platform that is evolving.
@@ -40,7 +40,7 @@ Please see links above for information & configuration of this Device.
 * Need to somehow add pulldown for the Universal Inputs. The universal inputs have a large list of configurable UOM's of their own.
 Please see configuration quick start link above. On page two, 2 it shows the GUI for the device there you can pick on each universal input to configure its type, a seperate UOM. Also see the viedo below.
 
-![Future Adds](https://github.com/sjpbailey/UDI-BASpi-SYS6U4R2AO-master/blob/master/Images/shot_3.png)
+![Future Adds](https://github.com/sjpbailey/udi-poly-baspi-sys6u4r2ao-master-v3/blob/b1b68c9918e52511beba6ff9f41cdc153e33f9e1/Images/shot_3.png)
 
 [Universal Input Configuration Viedo](https://www.youtube.com/watch?v=hTd1mR7npP4)
 
