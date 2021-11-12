@@ -118,7 +118,7 @@ class Controller(udi_interface.Node):
             LOGGER.info(ip4)
             ip5 = self.Parameters.basaoip_5  
             LOGGER.info(ip5)
-            node = basao_zone.PoolNode(self.poly, self.address, address, title, ip, ip1, ip2, ip3, ip4, ip5, self.bc )
+            node = basao_zone.basaoNode(self.poly, self.address, address, title, ip, ip1, ip2, ip3, ip4, ip5, self.bc )
             self.poly.addNode(node)
             self.wait_for_node_done()
         
