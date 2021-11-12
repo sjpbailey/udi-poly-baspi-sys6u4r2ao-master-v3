@@ -2,7 +2,7 @@
 
 ## Based on the Contemporary Controls BASpi-AO2 Controller
 
-![Irrigation Single Poly](/Users/stevenbailey/UDI Development PG3/Nodeservers/udi-poly-baspi-sys6u4r2ao-master-v3/Images/Shot_1.png)
+![Irrigation Single Poly]('https://github.com/sjpbailey/udi-poly-baspi-sys6u4r2ao-master-v3/blob/b1b68c9918e52511beba6ff9f41cdc153e33f9e1/Images/Shot_1.png')
 
 * The controller uses pull down commands for the outputs. Here is a program example within the ISY, there is no need for an Else statement on and off happen for the duration time in Then:
 
