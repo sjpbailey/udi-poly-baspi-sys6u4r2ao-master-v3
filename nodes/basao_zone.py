@@ -132,15 +132,16 @@ class basaoNode(udi_interface.Node):
             } 
         index = self.mapping[command['cmd']]['index']
         control = self.mapping[command['cmd']]['output']
+        output = self.mapping[command['cmd']]['output']
         self.ctrl = int(command.get('value',))
         self.setDriver(control, self.ctrl)
         if self.ctrl == 1:
             self.bc.binaryOutput(index, 1)
-            self.setDriver(index, 1)
+            self.setDriver(output, 1)
             LOGGER.info('Output On')
         elif self.ctrl == 0:
             self.bc.binaryOutput(index, 0)
-            self.setDriver(index, 0)
+            self.setDriver(output, 0)
             LOGGER.info('Output Off')
     
     # Analog Output 1
