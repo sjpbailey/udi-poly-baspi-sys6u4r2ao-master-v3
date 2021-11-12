@@ -47,6 +47,8 @@ class basaoNode(udi_interface.Node):
                 LOGGER.info('connected to BASpi6U4R2AO')
             elif self.bc.ePlatform == Platform.BASC_EO:
                 LOGGER.info('connected to BASedge6U4R2AO')
+            else:
+                pass
 
             LOGGER.info('\t' + str(self.bc.uiQty) +
                         ' Universal inputs in this BASpi6u4r2ao')
@@ -76,15 +78,6 @@ class basaoNode(udi_interface.Node):
         self.setOutputDriver('GV10', 4)
         self.setAOutputDriver('GV11', 5)
         self.setAOutputDriver('GV12', 6)
-
-        ### Virtual Values ###
-        #self.setVirtualDriver('GV13', 1, 201)
-        #self.setVirtualDriver('GV14', 2, 202)
-        #self.setVirtualDriver('GV15', 3, 203)
-        #self.setVirtualDriver('GV16', 4, 204)
-        #self.setVirtualDriver('GV17', 5, 205)
-        #self.setVirtualDriver('GV18', 6, 206)
-        #self.setVirtualDriver('GV19', 7, 207)
 
     ### Universal Input Conversion ###
 
@@ -117,25 +110,14 @@ class basaoNode(udi_interface.Node):
         else:
             pass
 
-    ### Virtual Conversion ###
-    # def setVirtualDriver(self, driver, input, chanel):
-    #    vtout_val = self.bc.virtualValue(input, chanel)
-    #    self.setDriver(driver, vtout_val)
-    #    count = 0
-    #    if vtout_val is not None:
-    #        count = int(float(vtout_val))
-            #self.setDriver(driver, count, force=True)
-    #    else:
-    #        pass
-
     # Output 1
     def setOnOff(self, command=None):
         # Input Output Control
         self.mapping = {
-            'DON1': {'output': 'GV7', 'index': (1)},  # ,'control': 'GV13'
-            'DON2': {'output': 'GV8', 'index': (2)},  # ,'control': 'GV14'
-            'DON3': {'output': 'GV9', 'index': (3)},  # ,'control': 'GV15'
-            'DON4': {'output': 'GV10', 'index': (4)},  # ,'control': 'GV16'
+            'DON1': {'output': 'GV7', 'index': (1)},
+            'DON2': {'output': 'GV8', 'index': (2)},
+            'DON3': {'output': 'GV9', 'index': (3)},
+            'DON4': {'output': 'GV10', 'index': (4)},
         }
         index = self.mapping[command['cmd']]['index']
         control = self.mapping[command['cmd']]['output']
@@ -203,13 +185,6 @@ class basaoNode(udi_interface.Node):
         {'driver': 'GV10', 'value': 1, 'uom': 80},
         {'driver': 'GV11', 'value': 0, 'uom': 72},
         {'driver': 'GV12', 'value': 0, 'uom': 72},
-        #{'driver': 'GV13', 'value': 1, 'uom': 25},
-        #{'driver': 'GV14', 'value': 1, 'uom': 25},
-        #{'driver': 'GV15', 'value': 1, 'uom': 25},
-        #{'driver': 'GV16', 'value': 1, 'uom': 25},
-        #{'driver': 'GV17', 'value': 1, 'uom': 25},
-        #{'driver': 'GV18', 'value': 1, 'uom': 25},
-        #{'driver': 'GV19', 'value': 1, 'uom': 25},
     ]
 
     id = 'baspiao1_id'
