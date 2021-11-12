@@ -18,13 +18,13 @@
     <nodeDef id="baspiao1_id" nls="basao">
         <editors />
         <sts>
-            <st id="GV1" editor="TEMP_F" />
+            <st id="GV1" editor="RAWVAL" />
             <st id="GV2" editor="RAWVAL" />
             <st id="GV3" editor="RAWVAL" />
             <st id="GV4" editor="RAWVAL" />
             <st id="GV5" editor="RAWVAL" />
             <st id="GV6" editor="RAWVAL" />
-            <st id="GV7" editor="bool" />
+            <st id="GV7" editor="onoff" />
             <st id="GV8" editor="onoff" />
             <st id="GV9" editor="onoff" />
             <st id="GV10" editor="onoff" />
@@ -33,11 +33,6 @@
         </sts>
         <cmds>
             <sends />
-            <!--<cmd id="DON" />
-            <cmd id="DON2" />
-            <cmd id="DON3" />
-            <cmd id="DON4" />-->
-            <!--</sends>-->
             <accepts>
                 <cmd id="DON1">
                     <p id="" editor="onoff" init="GV13" />

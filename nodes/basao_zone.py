@@ -51,7 +51,7 @@ class basaoNode(udi_interface.Node):
             LOGGER.info('Please open your Device Webpage to configure your input types')
             LOGGER.info('\n' "BASpi6U4R2AO IP IO Points configured")
         
-        # Please Configure your Devices inputs by logginging into the devices GUI at http://"yout ip address"             
+        # Please Configure your Devices inputs by logginging into the devices GUI at http://"your ip address"             
         # Set Nodes to match input and output types used
                     
         ### Universal Inputs ###
@@ -182,12 +182,12 @@ class basaoNode(udi_interface.Node):
 
     drivers = [
         {'driver': 'ST', 'value': 0, 'uom': 2},
-        {'driver': 'GV1', 'value': 1, 'uom': 17},
+        {'driver': 'GV1', 'value': 1, 'uom': 56},
         {'driver': 'GV2', 'value': 1, 'uom': 56},
-        {'driver': 'GV3', 'value': 1, 'uom': 80},
-        {'driver': 'GV4', 'value': 1, 'uom': 80},
-        {'driver': 'GV5', 'value': 1, 'uom': 80},
-        {'driver': 'GV6', 'value': 1, 'uom': 80},
+        {'driver': 'GV3', 'value': 1, 'uom': 56},
+        {'driver': 'GV4', 'value': 1, 'uom': 56},
+        {'driver': 'GV5', 'value': 1, 'uom': 56},
+        {'driver': 'GV6', 'value': 1, 'uom': 56},
         {'driver': 'GV7', 'value': 1, 'uom': 80},
         {'driver': 'GV8', 'value': 1, 'uom': 80},
         {'driver': 'GV9', 'value': 1, 'uom': 80},
