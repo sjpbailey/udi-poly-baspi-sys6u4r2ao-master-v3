@@ -125,10 +125,10 @@ class basaoNode(udi_interface.Node):
     def setOnOff(self,command=None):
         # Input Output Control       
         self.mapping = {
-            'DON1' : {'output':'GV7', 'index': (1),'control': 'GV13'}, 
-            'DON2' : {'output':'GV8', 'index': (2),'control': 'GV14'}, 
-            'DON3' : {'output':'GV9', 'index': (3),'control': 'GV15'}, 
-            'DON4' : {'output':'GV10', 'index': (4),'control': 'GV16'}, 
+            'DON1' : {'output':'GV7', 'index': (1)}, #,'control': 'GV13'
+            'DON2' : {'output':'GV8', 'index': (2)}, #,'control': 'GV14'
+            'DON3' : {'output':'GV9', 'index': (3)}, #,'control': 'GV15'
+            'DON4' : {'output':'GV10', 'index': (4)}, #,'control': 'GV16'
             } 
         index = self.mapping[command['cmd']]['index']
         control = self.mapping[command['cmd']]['control']
@@ -136,11 +136,11 @@ class basaoNode(udi_interface.Node):
         self.setDriver(control, self.ctrl)
         if self.ctrl == 1:
             self.bc.binaryOutput(index, 1)
-            self.setDriver(control, 1)
+            self.setDriver(index, 1)
             LOGGER.info('Output On')
         elif self.ctrl == 0:
             self.bc.binaryOutput(index, 0)
-            self.setDriver(control, 0)
+            self.setDriver(index, 0)
             LOGGER.info('Output Off')
     
     # Analog Output 1
@@ -191,15 +191,15 @@ class basaoNode(udi_interface.Node):
         {'driver': 'GV8', 'value': 1, 'uom': 80},
         {'driver': 'GV9', 'value': 1, 'uom': 80},
         {'driver': 'GV10', 'value': 1, 'uom': 80},
-        {'driver': 'GV11', 'value': 1, 'uom': 72},
-        {'driver': 'GV12', 'value': 1, 'uom': 72},
-        {'driver': 'GV13', 'value': 1, 'uom': 25}, 
-        {'driver': 'GV14', 'value': 1, 'uom': 25}, 
-        {'driver': 'GV15', 'value': 1, 'uom': 25}, 
-        {'driver': 'GV16', 'value': 1, 'uom': 25}, 
-        {'driver': 'GV17', 'value': 1, 'uom': 25}, 
-        {'driver': 'GV18', 'value': 1, 'uom': 25}, 
-        {'driver': 'GV19', 'value': 1, 'uom': 25},
+        {'driver': 'GV11', 'value': 0, 'uom': 72},
+        {'driver': 'GV12', 'value': 0, 'uom': 72},
+        #{'driver': 'GV13', 'value': 1, 'uom': 25}, 
+        #{'driver': 'GV14', 'value': 1, 'uom': 25}, 
+        #{'driver': 'GV15', 'value': 1, 'uom': 25}, 
+        #{'driver': 'GV16', 'value': 1, 'uom': 25}, 
+        #{'driver': 'GV17', 'value': 1, 'uom': 25}, 
+        #{'driver': 'GV18', 'value': 1, 'uom': 25}, 
+        #{'driver': 'GV19', 'value': 1, 'uom': 25},
         ]
 
     id = 'baspiao1_id'
