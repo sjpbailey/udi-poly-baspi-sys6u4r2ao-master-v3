@@ -71,13 +71,13 @@ class basaoNode(udi_interface.Node):
         self.setAOutputDriver('GV12', 6)
 
         ### Virtual Values ###
-        self.setVirtualDriver('GV13', 1, 201)
-        self.setVirtualDriver('GV14', 2, 202)
-        self.setVirtualDriver('GV15', 3, 203)
-        self.setVirtualDriver('GV16', 4, 204)
-        self.setVirtualDriver('GV17', 5, 205)
-        self.setVirtualDriver('GV18', 6, 206)
-        self.setVirtualDriver('GV19', 7, 207)
+        #self.setVirtualDriver('GV13', 1, 201)
+        #self.setVirtualDriver('GV14', 2, 202)
+        #self.setVirtualDriver('GV15', 3, 203)
+        #self.setVirtualDriver('GV16', 4, 204)
+        #self.setVirtualDriver('GV17', 5, 205)
+        #self.setVirtualDriver('GV18', 6, 206)
+        #self.setVirtualDriver('GV19', 7, 207)
 
         
     ### Universal Input Conversion ###
@@ -105,23 +105,24 @@ class basaoNode(udi_interface.Node):
         output_val = self.bc.analogOutput(input)
         count = 0
         if output_val is not None:
-            count = (output_val)
+            count = float(output_val)
             self.setDriver(driver, count, force=True)
         else:
             pass
 
     ### Virtual Conversion ###
-    def setVirtualDriver(self, driver, input, chanel):
-        vtout_val = self.bc.virtualValue(input, chanel)
-        self.setDriver(driver, vtout_val)
-        count = 0
-        if vtout_val is not None:
-            count = int(float(vtout_val))
+    #def setVirtualDriver(self, driver, input, chanel):
+    #    vtout_val = self.bc.virtualValue(input, chanel)
+    #    self.setDriver(driver, vtout_val)
+    #    count = 0
+    #    if vtout_val is not None:
+    #        count = int(float(vtout_val))
             #self.setDriver(driver, count, force=True)
-        else:
-            return
-            pass    
+    #    else:
+    #        pass    
 
+    # Output 1
+    def setOnOff(self,command=None):
         # Input Output Control       
         self.mapping = {
             'DON1' : {'output':'GV7', 'index': (1),'control': 'GV13'}, 
@@ -129,9 +130,6 @@ class basaoNode(udi_interface.Node):
             'DON3' : {'output':'GV9', 'index': (3),'control': 'GV15'}, 
             'DON4' : {'output':'GV10', 'index': (4),'control': 'GV16'}, 
             } 
-
-    # Output 1
-    def setOnOff(self,command=None):
         index = self.mapping[command['cmd']]['index']
         control = self.mapping[command['cmd']]['control']
         self.ctrl = int(command.get('value',))
