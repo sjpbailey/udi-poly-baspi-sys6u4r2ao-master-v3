@@ -1,6 +1,6 @@
 {
 	"name": "BASAO",
-	"docs": "https://github.com/sjpbailey/udi-poly-baspool-python-master-v3",
+	"docs": "https://github.com/sjpbailey/udi-poly-baspi-sys6u4r2ao-master-v3",
 	"type": "python3",
 	"executable": "BASAO.py",
 	"install": "install.sh",
@@ -26,8 +26,8 @@
 			"author": "Steve Bailey (sjpbailey)",
 			"version": "3.0.1",
 			"date": "November 12, 2021",
-			"source": "https://github.com/sjpbailey/udi-poly-baspool-python-master-v3",
-			"license": "https://github.com/sjpbailey/udi-poly-baspool-python-master-v3/LICENSE"
+			"source": "https://github.com/sjpbailey/udi-poly-baspi-sys6u4r2ao-master-v3",
+			"license": "https://github.com/sjpbailey/udi-poly-baspi-sys6u4r2ao-master-v3/LICENSE"
 		}
 	],
 	"store": {

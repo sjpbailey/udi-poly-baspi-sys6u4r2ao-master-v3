@@ -4,18 +4,6 @@ ST-ctl-ST-NAME = NodeServer Online
 ST-ctl-GV0-NAME = How Many
 CMD-ctl-DISCOVER-NAME = Re-Discover
 
-
-# controller old
-#ND-controller-NAME = BASPI6U4R2AO Controller
-#ND-controller-ICON = Thermostat
-#ST-ctl-ST-NAME = Controller Online
-#ST-ctl-GV19-NAME = BASpi2ao1 Online
-#CMD-ctl-QUERY"-NAME = Query
-#CMD-ctl-DISCOVER-NAME = Re-Discover
-#CMD-ctl-UPDATE_PROFILE-NAME = Update Profile
-#CMD-ctl-REMOVE_NOTICES_ALL-NAME = Remove All Notices
-#CMD-ctl-REMOVE_NOTICE_TEST-NAME = Remove Notice Test
-
 # Baspi6u4r2ao One
 ND-baspiao1_id-NAME = BASpi6U6R2AO 1
 ND-baspiao1_id-ICON = Electricity
