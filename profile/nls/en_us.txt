@@ -32,10 +32,10 @@ ST-basao-GV10-NAME = DO-4
 ST-basao-GV11-NAME = AO-1
 ST-basao-GV12-NAME = AO-2
 
-CMD-basao-DON1-NAME = DO1 On
-CMD-basao-DON2-NAME = DO2 On
-CMD-basao-DON3-NAME = DO3 On
-CMD-basao-DON4-NAME = DO4 On
+CMD-basao-DON1-NAME = DO1 S/S
+CMD-basao-DON2-NAME = DO2 S/S
+CMD-basao-DON3-NAME = DO3 S/S
+CMD-basao-DON4-NAME = DO4 S/S
 CMD-basao-SPEED-NAME = AO1 Out
 CMD-basao-SPEED2-NAME = AO2 Out
 CMD-basao-QUERY"-NAME = Query
