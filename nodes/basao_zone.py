@@ -52,6 +52,8 @@ class basaoNode(udi_interface.Node):
 
             LOGGER.info('\t' + str(self.bc.uiQty) +
                         ' Universal inputs in this BASpi6u4r2ao')
+            LOGGER.info('\t' + str(self.bc.biQty) +
+                        ' Binary inputs in this BASpi6u4r2ao')
             LOGGER.info('\t' + str(self.bc.boQty) +
                         ' Binary outputs in this BASpi6u4r2ao')
             LOGGER.info('\t' + str(self.bc.aoQty) +
