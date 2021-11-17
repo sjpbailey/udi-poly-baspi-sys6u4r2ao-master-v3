@@ -189,7 +189,7 @@ class basaoNode(udi_interface.Node):
         {'driver': 'GV12', 'value': 0, 'uom': 72},
     ]
 
-    id = 'baspiao1_id'
+    id = 'baspiao_'
 
     commands = {
         'DON1': setOnOff,

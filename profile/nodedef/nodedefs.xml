@@ -15,7 +15,7 @@
         </cmds>
     </nodeDef>
     <!-- mynodetype-->
-    <nodeDef id="baspiao1_id" nls="basao">
+    <nodeDef id="baspiao_" nls="basao">
         <editors />
         <sts>
             <st id="GV1" editor="RAWVAL" />

@@ -13,12 +13,12 @@
 	"profile_version": "3.0.1",
 	"customParams": {
 		"nodes": "0",
-		"basaoip_0": "127.0.0.1",
-		"basaoip_1": "",
+		"basaoip_1": "127.0.0.1",
 		"basaoip_2": "",
 		"basaoip_3": "",
 		"basaoip_4": "",
-		"basaoip_5": ""
+		"basaoip_5": "",
+		"basaoip_6": ""
 	},
 	"credits": [
 		{

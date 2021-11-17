@@ -106,26 +106,26 @@ class Controller(udi_interface.Node):
 
         LOGGER.info('Creating {} Pool Nodes'.format(how_many))
         for i in range(1, how_many):
-            address = 'baspiao1_id_{}'.format(i)
+            address = 'baspiao_{}'.format(i)
             title = 'Device {}'.format(i)
-            ip = self.Parameters.basaoip_0
+            ip = self.Parameters.basaoip_1
             LOGGER.info(ip)
-            ip1 = self.Parameters.basaoip_1
+            ip1 = self.Parameters.basaoip_2
             LOGGER.info(ip1)
-            ip2 = self.Parameters.basaoip_2
+            ip2 = self.Parameters.basaoip_3
             LOGGER.info(ip2)
-            ip3 = self.Parameters.basaoip_3
+            ip3 = self.Parameters.basaoip_4
             LOGGER.info(ip3)
-            ip4 = self.Parameters.basaoip_4
+            ip4 = self.Parameters.basaoip_5
             LOGGER.info(ip4)
-            ip5 = self.Parameters.basaoip_5
+            ip5 = self.Parameters.basaoip_6
             LOGGER.info(ip5)
             node = basao_zone.basaoNode(
                 self.poly, self.address, address, title, ip, ip1, ip2, ip3, ip4, ip5, self.bc)
             self.poly.addNode(node)
             self.wait_for_node_done()
 
-        self.setDriver('GV0', how_many, True, True)
+            self.setDriver('GV0', how_many, True, True)
 
     def stop(self):
         nodes = self.poly.getNodes()
