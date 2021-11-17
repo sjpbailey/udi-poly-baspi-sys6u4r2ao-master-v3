@@ -105,7 +105,7 @@ class Controller(udi_interface.Node):
                 self.poly.delNode(node)
 
         LOGGER.info('Creating {} BASpiAO Nodes'.format(how_many))
-        for i in range(1, how_many):
+        for i in range(0, how_many):
             address = 'zone_{}'.format(i)
             title = 'Device {}'.format(i)
             ip = self.Parameters.basaoip_1
