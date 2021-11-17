@@ -12,7 +12,7 @@
 	"logLevel": "INFO",
 	"profile_version": "3.0.1",
 	"customParams": {
-		"nodes": "0",
+		"nodes": "",
 		"basaoip_0": "127.0.0.1",
 		"basaoip_1": "",
 		"basaoip_2": "",
