@@ -104,7 +104,7 @@ class Controller(udi_interface.Node):
             if node != 'controller':   # but not the controller node
                 self.poly.delNode(node)
 
-        LOGGER.info('Creating {} Pool Nodes'.format(how_many))
+        LOGGER.info('Creating {} BASpiAO Nodes'.format(how_many))
         for i in range(1, how_many):
             address = 'zone_{}'.format(i)
             title = 'Device {}'.format(i)
