@@ -108,17 +108,17 @@ class Controller(udi_interface.Node):
         for i in range(0, how_many):
             address = 'zone_{}'.format(i)
             title = 'Device {}'.format(i)
-            ip = self.Parameters.basaoip_1
+            ip = self.Parameters.basaoip_0
             LOGGER.info(ip)
-            ip1 = self.Parameters.basaoip_2
+            ip1 = self.Parameters.basaoip_1
             LOGGER.info(ip1)
-            ip2 = self.Parameters.basaoip_3
+            ip2 = self.Parameters.basaoip_2
             LOGGER.info(ip2)
-            ip3 = self.Parameters.basaoip_4
+            ip3 = self.Parameters.basaoip_3
             LOGGER.info(ip3)
-            ip4 = self.Parameters.basaoip_5
+            ip4 = self.Parameters.basaoip_4
             LOGGER.info(ip4)
-            ip5 = self.Parameters.basaoip_6
+            ip5 = self.Parameters.basaoip_5
             LOGGER.info(ip5)
             node = basao_zone.basaoNode(
                 self.poly, self.address, address, title, ip, ip1, ip2, ip3, ip4, ip5, self.bc)
