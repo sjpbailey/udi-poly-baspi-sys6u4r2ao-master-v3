@@ -19,12 +19,13 @@ from nodes import basao_zone
 LOGGER = udi_interface.LOGGER
 Custom = udi_interface.Custom
 
+
 class Controller(udi_interface.Node):
     id = 'ctl'
     drivers = [
-            {'driver': 'ST', 'value': 1, 'uom': 2},
-            {'driver': 'GV0', 'value': 0, 'uom': 56},
-            ]
+        {'driver': 'ST', 'value': 1, 'uom': 2},
+        {'driver': 'GV0', 'value': 0, 'uom': 56},
+    ]
 
     def __init__(self, polyglot, parent, address, name):
         super(Controller, self).__init__(polyglot, parent, address, name)
@@ -60,7 +61,8 @@ class Controller(udi_interface.Node):
             if int(self.Parameters['nodes']) > 0:
                 validChildren = True
             else:
-                LOGGER.error('Invalid number of nodes {}'.format(self.Parameters['nodes']))
+                LOGGER.error('Invalid number of nodes {}'.format(
+                    self.Parameters['nodes']))
         else:
             LOGGER.error('Missing number of node parameter')
 
@@ -93,7 +95,7 @@ class Controller(udi_interface.Node):
                 return None
 
         except requests.exceptions.RequestException as e:
-            LOGGER.error("Error: " + str(e))    
+            LOGGER.error("Error: " + str(e))
 
     def createChildren(self, how_many):
         # delete any existing nodes
@@ -103,25 +105,26 @@ class Controller(udi_interface.Node):
                 self.poly.delNode(node)
 
         LOGGER.info('Creating {} Pool Nodes'.format(how_many))
-        for i in range(0, how_many):
+        for i in range(1, how_many):
             address = 'baspiao1_id_{}'.format(i)
-            title = 'Device {}'.format(i)            
+            title = 'Device {}'.format(i)
             ip = self.Parameters.basaoip_0
             LOGGER.info(ip)
-            ip1 = self.Parameters.basaoip_1  
+            ip1 = self.Parameters.basaoip_1
             LOGGER.info(ip1)
             ip2 = self.Parameters.basaoip_2
             LOGGER.info(ip2)
-            ip3 = self.Parameters.basaoip_3  
+            ip3 = self.Parameters.basaoip_3
             LOGGER.info(ip3)
             ip4 = self.Parameters.basaoip_4
             LOGGER.info(ip4)
-            ip5 = self.Parameters.basaoip_5  
+            ip5 = self.Parameters.basaoip_5
             LOGGER.info(ip5)
-            node = basao_zone.basaoNode(self.poly, self.address, address, title, ip, ip1, ip2, ip3, ip4, ip5, self.bc )
+            node = basao_zone.basaoNode(
+                self.poly, self.address, address, title, ip, ip1, ip2, ip3, ip4, ip5, self.bc)
             self.poly.addNode(node)
             self.wait_for_node_done()
-        
+
         self.setDriver('GV0', how_many, True, True)
 
     def stop(self):
