@@ -106,7 +106,7 @@ class Controller(udi_interface.Node):
 
         LOGGER.info('Creating {} Pool Nodes'.format(how_many))
         for i in range(1, how_many):
-            address = 'baspiao_{}'.format(i)
+            address = 'zone_{}'.format(i)
             title = 'Device {}'.format(i)
             ip = self.Parameters.basaoip_1
             LOGGER.info(ip)
