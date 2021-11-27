@@ -1,0 +1,41 @@
+ND-ctl-NAME = BASPI6U4R2AO
+ND-ctl-ICON = Thermostat
+ST-ctl-ST-NAME = NodeServer Online
+ST-ctl-GV0-NAME = How Many
+CMD-ctl-DISCOVER-NAME = Re-Discover
+
+# Baspi6u4r2ao One
+ND-zone-NAME = BASpi6U6R2AO 1
+ND-zone-ICON = Electricity
+ST-basao-GV1-NAME = UI-1
+ST-basao-GV2-NAME = UI-2
+ST-basao-GV3-NAME = UI-3
+ST-basao-GV4-NAME = UI-4
+ST-basao-GV5-NAME = UI-5
+ST-basao-GV6-NAME = UI-6
+ST-basao-GV7-NAME = DO-1
+ST-basao-GV8-NAME = DO-2
+ST-basao-GV9-NAME = DO-3
+ST-basao-GV10-NAME = DO-4
+ST-basao-GV11-NAME = AO-1
+ST-basao-GV12-NAME = AO-2
+
+CMD-basao-DON1-NAME = DO1 S/S
+CMD-basao-DON2-NAME = DO2 S/S
+CMD-basao-DON3-NAME = DO3 S/S
+CMD-basao-DON4-NAME = DO4 S/S
+CMD-basao-SPEED-NAME = AO1 Out
+CMD-basao-SPEED2-NAME = AO2 Out
+CMD-basao-QUERY"-NAME = Query
+
+VOLT_OUT-0 = 0 vdc
+VOLT_OUT-1 = 1 vdc
+VOLT_OUT-2 = 2 vdc
+VOLT_OUT-3 = 3 vdc
+VOLT_OUT-4 = 4 vdc
+VOLT_OUT-5 = 5 vdc
+VOLT_OUT-6 = 6 vdc
+VOLT_OUT-7 = 7 vdc
+VOLT_OUT-8 = 8 vdc
+VOLT_OUT-9 = 9 vdc
+VOLT_OUT-10 = 10 vdc
