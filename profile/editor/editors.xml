@@ -15,6 +15,5 @@
     <editor id="I_CLISPC_F">
         <range uom="72" min="0" max="10" nls="VOLT_OUT"/>
     </editor>
-
 </editors>
 

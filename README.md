@@ -1,4 +1,4 @@
-# Universal Devices BASpi-SYS6U4R2AO NodeServer
+# Universal Devices NodeServer for the BASpi-SYS6U4R2AO BacNet Device
 
 ## Based on the Contemporary Controls BASpi-AO2 Controller
 
@@ -8,8 +8,7 @@
 
 ![Irrigation ISY Program](https://github.com/sjpbailey/udi-poly-baspi-sys6u4r2ao-master-v3/blob/b1b68c9918e52511beba6ff9f41cdc153e33f9e1/Images/shot_2.png)
 
-* It would be great if the Else statement also included an additional If statement.
-This is also a very diverse platform that is evolving.
+* These controllers are full BacNet compatible and can be pulled into any system supporting barnet devices.
 
 ## BASpi-AO2 DIY BacNet Control Device by Contemporary Controls
 
