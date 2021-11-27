@@ -1,4 +1,6 @@
-# Universal Devices NodeServer for the  Contemporary Controls BASpi-SYS6U4R2AO BacNet Device
+# Universal Devices NodeServer for the  
+
+## Contemporary Controls BASpi-SYS6U4R2AO BacNet Device
 
 ## Based on the Contemporary Controls BASpi-AO2 Controller
 
