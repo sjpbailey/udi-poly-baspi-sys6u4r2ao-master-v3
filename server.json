@@ -1,0 +1,42 @@
+{
+	"name": "BASAO",
+	"docs": "https://github.com/sjpbailey/udi-poly-baspi-sys6u4r2ao-master-v3",
+	"type": "python3",
+	"executable": "BASAO.py",
+	"install": "install.sh",
+	"description": "WiFi BacNet BAS6u4r2ao Controller for general universal devices control",
+	"notice": "Please follow all codes & safety precautions for mechanical equipment",
+	"shortPoll": "120",
+	"longPoll": "240",
+	"testMode": false,
+	"logLevel": "INFO",
+	"profile_version": "3.0.1",
+	"customParams": {
+		"nodes": "",
+		"basaoip_0": "127.0.0.1",
+		"basaoip_1": "",
+		"basaoip_2": "",
+		"basaoip_3": "",
+		"basaoip_4": "",
+		"basaoip_5": ""
+	},
+	"credits": [
+		{
+			"title": "BAS6u4r2ao analog output BacNet control module",
+			"author": "Steve Bailey (sjpbailey)",
+			"version": "3.0.1",
+			"date": "November 12, 2021",
+			"source": "https://github.com/sjpbailey/udi-poly-baspi-sys6u4r2ao-master-v3",
+			"license": "https://github.com/sjpbailey/udi-poly-baspi-sys6u4r2ao-master-v3/LICENSE"
+		}
+	],
+	"store": {
+		"developer": "sjpbailey1961@gmail.com",
+		"purchaseOptions": [
+			{
+				"isPerpetual": true,
+				"price": 0
+			}
+		]
+	}
+}
