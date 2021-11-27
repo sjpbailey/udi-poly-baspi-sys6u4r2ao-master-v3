@@ -38,7 +38,7 @@ Please see links above for information & configuration of this Device.
 
 #### Future
 
-* Need add pulldown for the Universal Inputs all programmed with raw value no unit of measure. The universal inputs have a large list of configurable UOM's of their own.
+* Would like to add a pulldown for the Universal Inputs unit of measure until then all inputs are programmed with raw value "no unit of measure, UOM". The universal inputs have a large list of configurable UOM's of their own.
 Please see configuration quick start link above. On page two, 2 it shows the GUI for the device there you can pick on each universal input to configure its type, a seperate UOM. Also see the viedo below.
 
 ![Future Adds](https://github.com/sjpbailey/udi-poly-baspi-sys6u4r2ao-master-v3/blob/b1b68c9918e52511beba6ff9f41cdc153e33f9e1/Images/shot_3.png)
