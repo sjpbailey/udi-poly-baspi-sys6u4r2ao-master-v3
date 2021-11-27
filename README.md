@@ -28,7 +28,7 @@ This is also a very diverse platform that is evolving.
 
 ### Details
 
-* The purpose of this Nodeserver is for custom control for general Home automation for up to four 4; Binary Outputs, six 6; Universal Inputs and two 2; Analog Outputs.
+* The purpose of this Nodeserver is for custom control for general Home automation for up to four 4- Binary Outputs, six 6- Universal Inputs and two 2- Analog Outputs.
 
 * It utilizing the Contemporary Controls BASpi-AO2 control Module.
 Please see links above for information & configuration of this Device.
@@ -62,6 +62,7 @@ Please see configuration quick start link above. On page two, 2 it shows the GUI
 ###### User Provided
 
 * Enter your IP address for your BASpi-AO2 controller,
-* key = baspiao1_ip Value = Enter Your BASpi IP Address.
+* key = baspiao_* (* = 0-5) this parameter is provided, Value = Enter Your BASpi IP Address, Example: key baspiao_1  value 192.168.1.47
+* Value = Enter Your BASpi IP Address for each device you add.
 * Save and restart the NodeServer
 * sjb/gtb
