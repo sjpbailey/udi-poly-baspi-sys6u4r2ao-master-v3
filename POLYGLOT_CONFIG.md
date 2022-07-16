@@ -21,7 +21,8 @@
 ###### User Provided
 
 * Enter the number of pool nodes you desire 0-5
+* Config: Key = nodes, Value = 0-5
 * Enter your IP address for up to six (6) BASpi-SYS6U4R2AO controller,
-* Config: key = baspiao_* (* = 0-5) this parameter is provided, Value = Enter Your BASpi IP Address, Example: key poolip_0  value 192.168.1.47
+* Config: key = basaoip_* (* = 0-5) this parameter is provided, Value = Enter Your BASpi IP Address, Example: key poolip_0  value 192.168.1.47
 * Save and restart the NodeServer
   

@@ -66,7 +66,8 @@ Please see links above for information & configuration of this Device.
 ###### User Provided
 
 * Enter your IP address for your BASpi-AO2 controller,
-* key = baspiao_* (* = 0-5) this parameter is provided, Value = Enter Your BASpi IP Address, Example: key baspiao_1  value 192.168.1.47
+* Enter the desired number of nodes, Key = nodes, Value = 0-5
+* key = basaoip_* (* = 0-5) This parameter is provided, Value = Enter Your BASpi IP Address, Example: key baspiao_1  value 192.168.1.47
 * Value = Enter Your BASpi IP Address for each device you add.
 * Save and restart the NodeServer
 * sjb/gtb
