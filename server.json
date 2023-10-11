@@ -10,7 +10,7 @@
 	"longPoll": "240",
 	"testMode": false,
 	"logLevel": "INFO",
-	"profile_version": "3.0.1",
+	"profile_version": "3.0.2",
 	"customParams": {
 		"nodes": "",
 		"basaoip_0": "127.0.0.1",
@@ -24,7 +24,7 @@
 		{
 			"title": "BAS6u4r2ao analog output BacNet control module",
 			"author": "Steve Bailey (sjpbailey)",
-			"version": "3.0.1",
+			"version": "3.0.2",
 			"date": "November 12, 2021",
 			"source": "https://github.com/sjpbailey/udi-poly-baspi-sys6u4r2ao-master-v3",
 			"license": "https://github.com/sjpbailey/udi-poly-baspi-sys6u4r2ao-master-v3/LICENSE"
