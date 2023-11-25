@@ -45,11 +45,11 @@ class basaoNode(udi_interface.Node):
                 LOGGER.info('Unable to connect')
             elif self.bc.ePlatform == Platform.BASC_AO:
                 LOGGER.info('connected to BASpi6U4R2AO')
-            elif self.bc.ePlatform == Platform.BASC_EO:
+            elif self.bc.ePlatform == Platform.BASC_ED:
                 LOGGER.info('connected to BASedge6U4R2AO')
             else:
                 pass
-        if self.bc.ePlatform == Platform.BASC_AO or self.bc.ePlatform == Platform.BASC_EO:
+        if self.bc.ePlatform == Platform.BASC_AO or self.bc.ePlatform == Platform.BASC_ED:
             self.setDriver("ST", 1)
         else:
             self.setDriver("ST", 0)
