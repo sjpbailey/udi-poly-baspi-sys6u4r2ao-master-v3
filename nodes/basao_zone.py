@@ -49,7 +49,7 @@ class basaoNode(udi_interface.Node):
                 LOGGER.info('connected to BASedge6U4R2AO')
             else:
                 pass
-        if self.bc.ePlatform == Platform.BASC_PI or self.bc.ePlatform == Platform.BASC_ED:
+        if self.bc.ePlatform == Platform.BASC_AO or self.bc.ePlatform == Platform.BASC_EO:
             self.setDriver("ST", 1)
         else:
             self.setDriver("ST", 0)
