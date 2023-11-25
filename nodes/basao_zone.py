@@ -49,6 +49,10 @@ class basaoNode(udi_interface.Node):
                 LOGGER.info('connected to BASedge6U4R2AO')
             else:
                 pass
+        if self.bc.ePlatform == Platform.BASC_PI or self.bc.ePlatform == Platform.BASC_ED:
+            self.setDriver("ST", 1)
+        else:
+            self.setDriver("ST", 0)
 
             LOGGER.info('\t' + str(self.bc.uiQty) +
                         ' Universal inputs in this BASpi6u4r2ao')
