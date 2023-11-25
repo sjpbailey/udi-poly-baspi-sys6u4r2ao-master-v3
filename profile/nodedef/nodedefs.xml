@@ -30,6 +30,7 @@
             <st id="GV10" editor="onoff" />
             <st id="GV11" editor="I_CLISPC_F" />
             <st id="GV12" editor="I_CLISPC_F" />
+            <st id="ST" editor="bool" />
         </sts>
         <cmds>
             <sends />

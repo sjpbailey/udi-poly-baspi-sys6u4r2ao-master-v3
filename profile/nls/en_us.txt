@@ -19,6 +19,7 @@ ST-basao-GV9-NAME = DO-3
 ST-basao-GV10-NAME = DO-4
 ST-basao-GV11-NAME = AO-1
 ST-basao-GV12-NAME = AO-2
+ST-basao-ST-NAME = Online
 
 CMD-basao-DON1-NAME = DO1 S/S
 CMD-basao-DON2-NAME = DO2 S/S
